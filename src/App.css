@@ -23,6 +23,43 @@ a {
 
 
 .profile {
-  width: 5rem;
+  width: 88px;
   border-radius: 50%;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.App h1 {
+  font-size: 1.5rem;
+}
+
+.col {
+  padding: 5vmin 0;
+}
+
+.main__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: .75rem;
+  width: 80%;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.links a {
+  padding: 1em;
+  background: #ddd;
+  width: 100%;
+
 }
