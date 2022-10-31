@@ -17,20 +17,30 @@ img {
 
 a {
   text-decoration: none;
-  color: hsl(0, 9%, 2%);
+  color: hsl(220, 43%, 11%);
+  ;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  color: hsl(220, 43%, 11%);
+}
+
+
+/* finish css resets */
 
 
 .profile {
   width: 88px;
   border-radius: 50%;
+  margin-bottom: 1em;
 }
 
 .App {
   max-width: 1200px;
   margin: 0 auto;
   width: 80%;
+  position: relative;
 }
 
 .App h1 {
@@ -41,10 +51,15 @@ a {
   padding: 5vmin 0;
 }
 
+.hidden {
+  display: none;
+}
+
 .main__content {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 3em;
 }
 
 .links {
@@ -61,5 +76,43 @@ a {
   padding: 1em;
   background: #ddd;
   width: 100%;
+  border-radius: 5px;
+}
 
+.social__icons {
+  display: flex;
+  margin-top: 1em;
+}
+
+.social__icons *:nth-child(2) {
+  margin-left: 12px;
+}
+
+.footer__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0;
+  padding: 5em 0;
+}
+
+.footer__section img {
+  width: 15%;
+}
+
+@media (max-width:568px) {
+  .footer__section {
+    padding: 2em 0;
+    bottom: 0;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .footer__section img {
+    width: 50%;
+  }
 }
